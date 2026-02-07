@@ -26,7 +26,7 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center gap-2 group">
                             <Terminal className="w-8 h-8 text-neon-cyan transition-transform group-hover:rotate-12" />
                             <span className="font-orbitron font-bold text-xl tracking-wider text-white group-hover:text-neon-cyan transition-colors">
-                                TECH<span className="text-neon-cyan">CLUB</span>
+                                GIIS <span className="text-neon-primary">TECHCLUB</span>
                             </span>
                         </Link>
                     </div>

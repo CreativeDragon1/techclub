@@ -69,10 +69,10 @@ export default function EventsHub() {
         <Section id="events" className="relative z-10 py-20">
             <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-white mb-6">
-                    UPCOMING <span className="text-neon-magenta">OPERATIONS</span>
+                    UPCOMING <span className="text-neon-primary">OPERATIONS</span>
                 </h2>
-                <div className="inline-block p-4 border border-neon-magenta/30 bg-neon-magenta/5 rounded-lg backdrop-blur-sm">
-                    <p className="font-mono text-neon-magenta text-sm mb-1">NEXT EVENT INITIATION:</p>
+                <div className="inline-block p-4 border border-neon-primary/30 bg-neon-primary/5 rounded-lg backdrop-blur-sm">
+                    <p className="font-mono text-neon-primary text-sm mb-1">NEXT EVENT INITIATION:</p>
                     <p className="font-orbitron text-3xl md:text-5xl font-bold tracking-widest text-white animate-pulse">
                         {timeLeft}
                     </p>
@@ -88,12 +88,12 @@ export default function EventsHub() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
-                        <GlassCard className="flex flex-col md:flex-row gap-6 p-8 border-l-4 border-l-neon-magenta hover:bg-white/5 transition-colors">
+                        <GlassCard className="flex flex-col md:flex-row gap-6 p-8 border-l-4 border-l-neon-primary hover:bg-white/5 transition-colors">
                             <div className="flex flex-col justify-center items-center md:items-start min-w-[150px] border-b md:border-b-0 md:border-r border-white/10 pb-4 md:pb-0 md:pr-6">
                                 <span className="text-4xl font-bold text-white font-orbitron">
                                     {new Date(event.date).getDate()}
                                 </span>
-                                <span className="text-lg text-neon-magenta uppercase font-mono">
+                                <span className="text-lg text-neon-primary uppercase font-mono">
                                     {new Date(event.date).toLocaleString('default', { month: 'short' })}
                                 </span>
                                 <span className="text-sm text-gray-400 font-mono mt-2">{event.type}</span>
@@ -105,11 +105,11 @@ export default function EventsHub() {
 
                                 <div className="flex flex-wrap gap-4 text-sm text-gray-400 font-mono">
                                     <div className="flex items-center gap-2">
-                                        <Clock className="w-4 h-4 text-neon-cyan" />
+                                        <Clock className="w-4 h-4 text-neon-teal" />
                                         {event.time}
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <MapPin className="w-4 h-4 text-neon-purple" />
+                                        <MapPin className="w-4 h-4 text-neon-secondary" />
                                         {event.location}
                                     </div>
                                 </div>

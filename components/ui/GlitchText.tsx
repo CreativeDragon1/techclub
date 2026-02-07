@@ -29,13 +29,13 @@ export default function GlitchText({ text, className }: GlitchTextProps) {
                 {text}
             </motion.span>
             <span
-                className="absolute top-0 left-0 -z-10 w-full h-full text-neon-cyan opacity-70 animate-glitch"
+                className="absolute top-0 left-0 -z-10 w-full h-full text-neon-primary opacity-70 animate-glitch"
                 style={{ clipPath: "polygon(0 0, 100% 0, 100% 45%, 0 45%)", transform: "translate(-2px)" }}
             >
                 {text}
             </span>
             <span
-                className="absolute top-0 left-0 -z-10 w-full h-full text-neon-magenta opacity-70 animate-glitch"
+                className="absolute top-0 left-0 -z-10 w-full h-full text-neon-teal opacity-70 animate-glitch"
                 style={{
                     clipPath: "polygon(0 80%, 100% 20%, 100% 100%, 0 100%)",
                     transform: "translate(2px)",

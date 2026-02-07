@@ -21,7 +21,7 @@ const posts = [
         description: "Looking for frontend devs to visualize real-time neural network weights.",
         tags: ["Python", "Three.js", "TensorFlow"],
         icon: Brain,
-        color: "text-neon-cyan",
+        color: "text-neon-primary",
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ const posts = [
         description: "Can you exploit the vulnerable server? 500 points for the winner.",
         tags: ["C", "Assembly", "Linux"],
         icon: Shield,
-        color: "text-neon-magenta",
+        color: "text-neon-secondary",
     },
     {
         id: 3,
@@ -41,7 +41,7 @@ const posts = [
         description: "Deep dive into Next.js 14 and the future of React rendering.",
         tags: ["React", "Next.js", "Edge"],
         icon: Code,
-        color: "text-neon-purple",
+        color: "text-neon-teal",
     },
     {
         id: 4,
@@ -67,7 +67,7 @@ export default function BlogFeed() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
                     <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-white mb-4">
-                        TRANSMISSIONS <span className="text-neon-purple">& OT CARDS</span>
+                        TRANSMISSIONS <span className="text-neon-teal">& OT CARDS</span>
                     </h2>
                     <p className="text-gray-400 font-mono">
                         Latest updates, tasks, and opportunities from the network.
@@ -79,8 +79,8 @@ export default function BlogFeed() {
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-4 py-2 rounded-full text-xs font-mono border transition-all duration-300 ${filter === cat
-                                    ? "bg-neon-purple/20 border-neon-purple text-neon-purple shadow-[0_0_10px_rgba(189,0,255,0.3)]"
-                                    : "border-white/10 text-gray-400 hover:border-white/30 hover:text-white"
+                                ? "bg-neon-teal/20 border-neon-teal text-neon-teal shadow-[0_0_10px_rgba(20,184,166,0.3)]"
+                                : "border-white/10 text-gray-400 hover:border-white/30 hover:text-white"
                                 }`}
                         >
                             {cat}
@@ -100,7 +100,7 @@ export default function BlogFeed() {
                             exit={{ opacity: 0, scale: 0.9 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <GlassCard hoverEffect className="h-full flex flex-col justify-between group">
+                            <GlassCard hoverEffect className="h-full flex flex-col justify-between group decoration-neon-primary">
                                 <div>
                                     <div className="flex justify-between items-start mb-4">
                                         <span className={`text-xs font-mono px-2 py-1 rounded bg-white/5 ${post.color} border border-white/10`}>
@@ -108,7 +108,7 @@ export default function BlogFeed() {
                                         </span>
                                         <post.icon className={`w-6 h-6 ${post.color} group-hover:animate-pulse`} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors">
+                                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-neon-primary transition-colors">
                                         {post.title}
                                     </h3>
                                     <p className="text-gray-400 text-sm mb-6 font-mono leading-relaxed">

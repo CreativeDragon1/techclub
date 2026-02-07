@@ -13,9 +13,10 @@ const config: Config = {
         background: "#030712", // Dark Navy / Black
         foreground: "#ffffff",
         neon: {
-          cyan: "#00f3ff",
-          purple: "#bd00ff",
-          magenta: "#ff003c",
+          cyan: "#22d3ee", // Cyan-400
+          teal: "#14b8a6", // Teal-500
+          primary: "#00DFC0", // Custom Bright Teal from image
+          secondary: "#004d4d", // Dark Teal
         },
       },
       fontFamily: {

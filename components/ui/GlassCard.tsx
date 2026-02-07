@@ -13,7 +13,7 @@ export default function GlassCard({ children, className, hoverEffect = false }: 
         <div
             className={cn(
                 "glass-card p-6 rounded-lg border border-white/10 bg-black/40 backdrop-blur-md transition-all duration-300",
-                hoverEffect && "hover:border-neon-cyan/50 hover:shadow-[0_0_15px_rgba(0,243,255,0.2)] hover:-translate-y-1",
+                hoverEffect && "hover:border-neon-primary/50 hover:shadow-[0_0_15px_rgba(0,223,192,0.2)] hover:-translate-y-1",
                 className
             )}
         >

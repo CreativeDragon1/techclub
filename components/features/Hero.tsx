@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
             {/* Background Animation */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neon-purple/20 via-background to-background opacity-50" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neon-secondary/40 via-background to-background opacity-60" />
                 <div className="absolute w-full h-full bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
             </div>
 
@@ -22,14 +22,14 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="mb-4 inline-block px-4 py-1.5 rounded-full border border-neon-cyan/30 bg-neon-cyan/10 backdrop-blur-sm">
-                        <span className="text-neon-cyan font-mono text-xs tracking-wider uppercase">
+                    <div className="mb-4 inline-block px-4 py-1.5 rounded-full border border-neon-primary/30 bg-neon-primary/10 backdrop-blur-sm">
+                        <span className="text-neon-primary font-mono text-xs tracking-wider uppercase">
                             System Interface v2.0 Online
                         </span>
                     </div>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-orbitron font-extrabold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-gray-500">
                         BUILD THE <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-neon-purple relative">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-primary to-neon-teal relative">
                             <GlitchText text="FUTURE" />
                         </span>
                     </h1>
@@ -58,7 +58,7 @@ export default function Hero() {
                 transition={{ repeat: Infinity, duration: 2 }}
             >
                 <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center p-2">
-                    <div className="w-1 h-2 bg-neon-cyan rounded-full" />
+                    <div className="w-1 h-2 bg-neon-primary rounded-full" />
                 </div>
             </motion.div>
         </div>

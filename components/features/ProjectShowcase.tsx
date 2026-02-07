@@ -36,15 +36,15 @@ export default function ProjectShowcase() {
     return (
         <div className="relative py-20 bg-black/50 overflow-hidden" id="projects">
             {/* Background Element */}
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-neon-cyan/5 blur-[150px] pointer-events-none" />
+            <div className="absolute top-0 right-0 w-1/3 h-full bg-neon-primary/5 blur-[150px] pointer-events-none" />
 
             <Section>
                 <div className="mb-16">
-                    <span className="text-neon-cyan font-mono text-sm tracking-widest uppercase mb-2 block">
+                    <span className="text-neon-primary font-mono text-sm tracking-widest uppercase mb-2 block">
                         Showcase
                     </span>
                     <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-white mb-6">
-                        MEMBER <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-white">PROJECTS</span>
+                        MEMBER <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-primary to-white">PROJECTS</span>
                     </h2>
                     <p className="max-w-2xl text-gray-400 font-mono">
                         Groundbreaking work from our elite members. From AI to hardware, see what we&apos;re building.
@@ -64,7 +64,7 @@ export default function ProjectShowcase() {
                                 <div className="mb-4 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-100">
                                     <div className="flex gap-2 mb-2">
                                         {project.stack.map(tech => (
-                                            <span key={tech} className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/30">
+                                            <span key={tech} className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-neon-primary/20 text-neon-primary border border-neon-primary/30">
                                                 {tech}
                                             </span>
                                         ))}
@@ -76,10 +76,10 @@ export default function ProjectShowcase() {
                                 <p className="text-gray-300 text-sm mb-6 line-clamp-2">{project.description}</p>
 
                                 <div className="flex gap-4">
-                                    <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-white/20 hover:text-neon-cyan transition-colors">
+                                    <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-white/20 hover:text-neon-primary transition-colors">
                                         <Github className="w-5 h-5" />
                                     </a>
-                                    <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-white/20 hover:text-neon-cyan transition-colors">
+                                    <a href="#" className="p-2 rounded-full bg-white/10 hover:bg-white/20 hover:text-neon-primary transition-colors">
                                         <ExternalLink className="w-5 h-5" />
                                     </a>
                                 </div>

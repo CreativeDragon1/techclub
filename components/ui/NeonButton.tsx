@@ -19,9 +19,9 @@ export default function NeonButton({
     variant = "primary",
 }: NeonButtonProps) {
     const colors = {
-        primary: "border-neon-cyan text-neon-cyan hover:bg-neon-cyan/10",
-        secondary: "border-neon-purple text-neon-purple hover:bg-neon-purple/10",
-        danger: "border-neon-magenta text-neon-magenta hover:bg-neon-magenta/10",
+        primary: "border-neon-primary text-neon-primary hover:bg-neon-primary/10",
+        secondary: "border-neon-teal text-neon-teal hover:bg-neon-teal/10",
+        danger: "border-neon-secondary text-neon-secondary hover:bg-neon-secondary/10",
     };
 
 

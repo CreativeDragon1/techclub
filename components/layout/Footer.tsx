@@ -43,7 +43,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-8 border-t border-white/10 pt-8 text-center">
                     <p className="text-xs text-gray-500 font-mono">
-                        &copy; {new Date().getFullYear()} Tech Club. All rights reserved. System Operational.
+                        &copy; {new Date().getFullYear()} GIIS Tech Club. All rights reserved. System Operational.
                     </p>
                 </div>
             </div>
